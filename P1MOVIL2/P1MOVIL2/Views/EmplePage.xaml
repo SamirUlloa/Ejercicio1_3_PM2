@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="P1MOVIL2.Views.EmplePage">
+    
+    
+    
+    
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Button Text="Nuevo Empleado" x:Name="btnAgregarEmple" Clicked="btnAgregarEmple_Clicked" Margin="15"/>
+            <Label Text="Empleados Registrados" HorizontalTextAlignment="Center" FontSize="20"/>
+            <ListView x:Name="ListaEmpleados" ItemTapped="ListaEmpleados_ItemTapped">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding nombre}"/>
+                    </DataTemplate> 
+                </ListView.ItemTemplate>
+            </ListView>
+                
+                      
+             
+                
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
